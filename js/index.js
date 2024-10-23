@@ -1,6 +1,6 @@
-import { icubeHeaderEvet } from "/icube/header.js";
-import { icubeFooterEvet } from "/icube/footer.js";
-import { icubePopupEvet } from "/icube/popup/popup.js";
+import { icubeHeaderEvet } from "./header.js";
+import { icubeFooterEvet } from "./footer.js";
+import { icubePopupEvet } from "./popup/popup.js";
 
 
 
