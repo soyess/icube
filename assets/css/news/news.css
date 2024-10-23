@@ -151,6 +151,7 @@ button{ border: none;}
 .newsWrap .newsBoxs .newsToday .todaysSub{
 
     width: calc(45% - 20px);
+    max-width: calc(325px - 20px);
     padding:20px 0px 0px 20px;
 }
 

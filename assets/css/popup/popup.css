@@ -190,6 +190,7 @@ input:focus{ outline: none;}
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(30px);
+    cursor: pointer;
 }
 
 .popupWrap .closeBtn img{
