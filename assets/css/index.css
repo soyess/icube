@@ -516,6 +516,7 @@ button{ border: none;}
       width: 100%;
       background-color: transparent;
       border-radius: none;
+      -webkit-backdrop-filter: unset;
       backdrop-filter:unset;
       padding: 141px 0px 140px;
    }
