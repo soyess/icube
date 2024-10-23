@@ -4,13 +4,11 @@
 function newsDetailsTextAreaEvet(){
 
     let newsDetailsText = document.querySelector(".detailsTexts");
-    console.log(newsDetailsText.value);
-
-    const textHeight = newsDetailsText .scrollHeight;
-    console.log(textHeight);
 
     if(newsDetailsText.value){
-
+      
+      const textHeight = newsDetailsText.scrollHeight;
+      
       newsDetailsText.style.height = `${textHeight}px`;
 
     }

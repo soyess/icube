@@ -180,11 +180,11 @@ const pastNewsData = async () => {
 
          if(index > 0){
             return options += `<option>${thisYearBoxs - [index]}</option>`,
-            answers += `<li><p>${thisYearBoxs - [index]}</p></li>`;
+            answers += `<li><p>${thisYearBoxs - [index]}년</p></li>`;
          }
 
          options += `<option>${thisYearBoxs}</option>`;
-         answers += `<li><p>${thisYearBoxs}</p></li>`;
+         answers += `<li><p>${thisYearBoxs}년</p></li>`;
 
       })
 
@@ -193,8 +193,8 @@ const pastNewsData = async () => {
 
       totalMonthArray.forEach((list) => {
 
-        months += `<li><p>${list}</p></li>`;
         monthOptions += `<option>${list}</option>`;
+        months += `<li><p>${list}월</p></li>`;
 
       })
 
@@ -216,8 +216,8 @@ const pastNewsData = async () => {
 
         }
 
-        newSelectTitleBtns[0].textContent = thisYearBoxs; //최초의 년도 설정 (이번년도)
-        newSelectTitleBtns[1].textContent = pastMonthCont; //현재달보다 한달 이전으로 설정
+        newSelectTitleBtns[0].textContent = `${thisYearBoxs}년`; //최초의 년도 설정 (이번년도)
+        newSelectTitleBtns[1].textContent = `${pastMonthCont}월`; //현재달보다 한달 이전으로 설정
         newsPastHiddenSelectBox01.options[0].selected = "true";
 
         console.log(`최초의_년도셀렉박스_값 ${newsPastHiddenSelectBox01.value}`);
@@ -270,8 +270,10 @@ const pastNewsData = async () => {
 
                 for(let i = 0; i <= thisSelectBoxs.children.length - 1; i++){
                     
-                    if(thisSelectBoxs.children[i].value == thisTarget.textContent){ //클릭한 리스트의 값과 옵션의 값이 같다면
+                    const answerBoxs = thisTarget.textContent.substr(-1, 1);
+                    console.log(thisTarget.textContent)
 
+                    if(thisSelectBoxs.children[i].value == thisTarget.textContent.substr(0, [thisTarget.textContent.length - 1])){ //클릭한 리스트의 값과 옵션의 값이 같다면
                         thisSelectBoxs.children[i].selected = "true"; //셀렉박스에 값 담기
                         console.log(`현재셀렉박스값 ${thisSelectBoxs.id}, 셀렉박스값 ${thisSelectBoxs.value}`);
                     }

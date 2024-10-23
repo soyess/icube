@@ -151,7 +151,7 @@ button{ border: none;}
 .newsWrap .newsBoxs .newsToday .todaysSub{
 
     width: calc(45% - 20px);
-    max-width: calc(325px - 20px);
+    /* max-width: calc(325px - 20px); */
     padding:20px 0px 0px 20px;
 }
 
@@ -180,7 +180,10 @@ button{ border: none;}
     height: 1px;
     position: absolute;
     bottom:-12px;
+    left:0;
 }
+
+.newsWrap .newsBoxs .newsToday .todaysSub ul:last-child::after { display:none;}
 
 .newsWrap .newsBoxs .newsToday .todaysSub ul span{
 
@@ -375,14 +378,14 @@ button{ border: none;}
   background-color: #D9D9D9;
 }
 
-/* 스크롤바 트랙 위쪽 여백 공간 주기 위해서 */
+/* 스크롤바 트랙 위쪽 여백 공간*/
 .newsWrap .newsBoxs .newsPast .newsPastSelectList .newsPastSelectListMember::-webkit-scrollbar-button:vertical:start:decrement,
 .newsWrap .newsBoxs .newsPast .newsPastSelectList .newsPastSelectListMember::-webkit-scrollbar-button:vertical:start:increment {
     display: block;
     height: 5px;
 }
 
-/* 만일 스크롤바 트랙 아래쪽도 여백 공간을 주고 싶다면 ... */
+/* 만일 스크롤바 트랙 아래쪽도 여백 공간 */
 .newsWrap .newsBoxs .newsPast .newsPastSelectList .newsPastSelectListMember::-webkit-scrollbar-button:vertical:end:decrement {
     display: block;
     width: 5px;
@@ -415,7 +418,6 @@ button{ border: none;}
 }
 
 
-.newsWrap .newsBoxs .newsPast .pastNewsCont ul:hover p{ color:#fff;}
 
 .newsWrap .newsBoxs .newsPast .pastNewsCont ul li{
    
@@ -449,6 +451,11 @@ button{ border: none;}
     color:#868686;
     word-break: keep-all;
 
+}
+
+.newsWrap .newsBoxs .newsPast .pastNewsCont ul:hover p{ 
+    color:#fff;
+    transition: color 800ms;
 }
 
 

@@ -236,11 +236,6 @@ button{ border: none;}
    border-bottom: none;
 }
 
-#icubeMainWrappers .icubeMainCont .mainMenuWrappers .mainMenuBoxs .newsTab .newsList li a{
-
-}
-#icubeMainWrappers .icubeMainCont .mainMenuWrappers .mainMenuBoxs .newsTab .newsList li a:hover p { color:#fff;}
-
 #icubeMainWrappers .icubeMainCont .mainMenuWrappers .mainMenuBoxs .newsTab .newsList li a h5{
 
    color:#D9D9D9;
@@ -263,6 +258,11 @@ button{ border: none;}
    text-overflow: ellipsis;
    overflow: hidden;
    white-space: nowrap;
+}
+
+#icubeMainWrappers .icubeMainCont .mainMenuWrappers .mainMenuBoxs .newsTab .newsList li a:hover p { 
+   color:#fff;
+   transition: color 800ms;
 }
 
 
@@ -315,11 +315,32 @@ button{ border: none;}
    background-position: 96% 20px;
    background-repeat: no-repeat;
    background-size: 24px;
+   opacity: 70%;
+   position: relative;
+}
+
+#icubeMainWrappers .icubeMainCont .mainMenuWrappers .mainMenuBoxs .constructTab .constructTabCont .constructTabLinks a::before{
+
+   content: "";
+   width: 0px;
+   height: 1px;
+   background-color: #fff;
+   position: absolute;
+   left:0;
+   bottom:0;
+
 }
 
 #icubeMainWrappers .icubeMainCont .mainMenuWrappers .mainMenuBoxs .constructTab .constructTabCont .constructTabLinks a:hover{
 
-   opacity: 20%;
+   opacity: 100%;
+   transition: opacity 800ms;
+}
+
+#icubeMainWrappers .icubeMainCont .mainMenuWrappers .mainMenuBoxs .constructTab .constructTabCont .constructTabLinks a:hover::before{
+
+   width: 100%;
+   transition: width 800ms;
 }
 
 
