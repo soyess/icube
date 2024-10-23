@@ -1,4 +1,4 @@
-import { icubeHeaderEvet } from "./header.js";
+import { icubeHeaderEvet } from "./header.js"
 import { icubeFooterEvet } from "./footer.js";
 import { icubePopupEvet } from "./popup/popup.js";
 

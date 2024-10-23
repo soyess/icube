@@ -116,7 +116,7 @@ getData();
 /* 과거뉴스 리스트 불러오는 이벤트 */
 const pastNewsData = async () => {
 
-    const pastResponse = await fetch('/json/news/news.json');
+    const pastResponse = await fetch('/icube/json/news/news.json');
     const pastData = await pastResponse.json();
     const pastAnswers = pastData.pastNews
     console.log('과거뉴스리스트데이터', pastAnswers);
