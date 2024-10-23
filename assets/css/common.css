@@ -18,6 +18,11 @@ button{
 }
 
 
+body.hidden{
+
+   overflow: hidden;
+}
+
 .icubeHeader { 
 
    width: 100%;
@@ -190,7 +195,6 @@ footer {
       height:100%;
       background-color: #18212D66;
       backdrop-filter: blur(60px);
-      transition: height 500ms;
    }
 
 
@@ -233,13 +237,15 @@ footer {
       padding:0px 20px;
       background-color: #18212D66;
       backdrop-filter: blur(60px);
+      opacity: 0;
 
    }
 
    header nav.active{
 
       height:100vh;
-      transition: 500ms;
+      opacity: 1;
+      transition: opacity 500ms;
    }
 
    header nav section{
@@ -295,7 +301,7 @@ footer {
       color:#272727;
       cursor: pointer;
       background-image: url(/icube/assets/images/arrowNext.png);
-      background-position: 70% center;
+      background-position: calc(100% / 1.63) center;
       background-repeat: no-repeat;
       background-size: 12px;
 
@@ -358,7 +364,7 @@ footer {
       align-items: center;
       justify-content: center;
       position: absolute;
-      bottom:30%;
+      bottom:12%;
       width: 100%;
       
 
@@ -410,4 +416,6 @@ footer {
       height: 28px;
       line-height: 28px;
    }
+
+   header nav section .moNavLoginBoxs button { background-position: calc(100% / 1.6) center; }
 }

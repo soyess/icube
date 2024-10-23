@@ -33,6 +33,7 @@ input:focus{ outline: none;}
     
 }
 #popupWrappers.active{ 
+
     display:flex;
     align-items: center;
     justify-content: center;
@@ -81,7 +82,7 @@ input:focus{ outline: none;}
      align-items: center;
      justify-content: center;
 }
-.popupWrap .loginPages .loginSection ul li{}
+
 .popupWrap .loginPages .loginSection ul li img{
 
     height:60px;
@@ -107,6 +108,11 @@ input:focus{ outline: none;}
     align-items: center;
     color:#FFFFFF;
     padding-top:10px;
+}
+
+.popupWrap .loginPages .loginSection .moLoginCheckBoxs{
+
+    padding-left:15px;
 }
 .popupWrap .loginPages .loginSection .loginFormBoxs{ 
     padding-top:76px;
@@ -200,19 +206,31 @@ input:focus{ outline: none;}
     object-fit: cover;
 }
 
+.popupWrap .closeBtn .moPopCloseImg { display:none; }
+
 
 /* 반응형 */
 
 @media all and (max-width:1080px){
 
-    .popupWrap {
+
+    #popupWrappers.active .popupWrap {
 
         max-width:auto;
         width:100%;
         height:calc(100% - 102px);
-        bottom:0px;
         border-radius: 20px;
+        animation: opacityEvet 500ms ease-in-out forwards;
     }
+
+    @keyframes opacityEvet{
+
+        0% { bottom: -100%; }
+        100% { bottom: 0; }
+    }
+    
+
+
     .popupWrap .loginPages { 
         border-radius: 0px;
         border-top-left-radius: 20px;
@@ -244,7 +262,7 @@ input:focus{ outline: none;}
         height:56px; 
         justify-content: center;
         background-size: 12px;
-        background-position: 60% center;
+        background-position: calc(100% / 1.63) center;
 
     }
     .popupWrap .loginPages .loginSection .loginFormBoxs .loginInfo p { font-size: 13px; padding-bottom: 10px;}
@@ -253,6 +271,7 @@ input:focus{ outline: none;}
         width:calc(100% - 40px);
         height:56px;
         background-color: #E4E4E40A;
+        font-size: 15px;
     }
     .popupWrap .loginPages .loginBanner { display:none;}
     .popupWrap .closeBtn {
@@ -266,13 +285,14 @@ input:focus{ outline: none;}
 
         width: 25px;
         height: 25px;
-        filter: invert(100);
     }
+
+    .popupWrap .closeBtn .pcPopCloseImg { display:none; }
+    .popupWrap .closeBtn .moPopCloseImg{ display:block; }
 }
 
-@media all and (max-width:360px){
 
-    .popupWrap .loginPages .loginSection .loginFormBoxs button { 
-        background-position: 65% center;
-    }
+@media all and (max-width:350px){
+
+    .popupWrap .loginPages .loginSection .loginFormBoxs button {background-position: calc(100% / 1.6) center;}
 }

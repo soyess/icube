@@ -550,8 +550,9 @@ button{ border: none;}
     .newsWrap .newsBoxs .newsPast .newsSelectWrappers .newsPastSelectBoxs { width:100px; }
     .newsWrap .newsBoxs .newsPast .newsPastSelects { max-width:100px; height:40px;}
     .newsWrap .newsBoxs .newsPast .newsPastSelectList { top:46px;}
-    .newsWrap .newsBoxs .newsPast .pastNewsCont ul li h3{ font-size: 16px; line-height: 19.2px; margin-bottom: 8px;}
-    .newsWrap .newsBoxs .newsPast .pastNewsCont ul li p { max-height:42px;}
+    .newsWrap .newsBoxs .newsPast .pastNewsCont ul { border-radius: 0px;}
+    .newsWrap .newsBoxs .newsPast .pastNewsCont ul li h3{ font-size: 16px; line-height: 19.2px; margin-bottom: 8px; width:100%;}
+    .newsWrap .newsBoxs .newsPast .pastNewsCont ul li p { max-height:42px; width:100%;}
     .newsWrap .newsBoxs .newsPast .pageNationWrappers{ margin-top:20px;}
 }
 

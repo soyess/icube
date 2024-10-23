@@ -258,6 +258,7 @@ textarea:focus{ outline: none;}
    #newsDetailsWrapper .newsDetailsWrap{ padding:64px 15px 120px;}
    #newsDetailsWrapper .newsDetailsWrap .newsDetailsBanners { height:130px;}
    #newsDetailsWrapper .newsDetailsWrap .newsDetailsBanners img{ object-fit: cover; width:auto;}
+   #newsDetailsWrapper .newsDetailsWrap .newsDetailsBoxs .newsDetailsTopBoxs .shareBoxs button { background-size: 23px;}
 }
 
 @media all and (max-width:768px){
@@ -326,4 +327,6 @@ textarea:focus{ outline: none;}
       font-size: 14px;
       line-height: 22px;
    }
+
+
 }

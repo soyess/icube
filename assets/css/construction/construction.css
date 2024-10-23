@@ -176,25 +176,63 @@ button{
       height:100%;
       object-fit: fill;
    }
+
+   .constructWrap .constructBoxs .constructTabWrappers {
+
+      overflow-x: hidden;
+      position: relative;
+   }
+
+   .constructWrap .constructBoxs .constructTabWrappers::after{
+
+      content: "";
+      background: linear-gradient(90deg, rgba(38,38,38,0) 0%, rgba(38,38,38,1) 100%);
+      position: absolute;
+      bottom:0px;
+      right:-1px;
+      width:56px;
+      height:45px;
+      
+
+   }
    .constructWrap .constructBoxs .constructTabWrappers h3{ 
          font-size: 16px;
          line-height: 19.2px;
       }
 
-   .constructWrap .constructBoxs .constructTabWrappers .constructTabBoxs{ justify-content: space-between;}
+
+   .constructWrap .constructBoxs .constructTabWrappers .constructTabBoxs{ 
+     
+      justify-content: space-evenly;
+      overflow-x: scroll;
+
+
+   }
+
+
+   .constructWrap .constructBoxs .constructTabWrappers .constructTabBoxs::-webkit-scrollbar {
+      display:none;
+  }
+
    .constructWrap .constructBoxs .constructTabWrappers .constructTabBoxs button {
 
       width: 82px;
+      min-width:82px;
       height:calc(40px - 10.65px);
       padding-bottom: 10.65px;
       line-height: 16.8px;
       font-size: 14px;
+      white-space: nowrap;
+      position: relative;
+      z-index:1;
+      background-color: transparent;
    }
+
       
 } 
 
-@media all and (max-width:500px){
+/* @media all and (max-width:500px){
 
    .constructWrap .constructBoxs .constructTabWrappers .constructTabBoxs{overflow-x: scroll;}
    .constructWrap .constructBoxs .constructTabWrappers .constructTabBoxs button{ white-space: nowrap;}
-}
+} */

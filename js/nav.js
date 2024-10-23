@@ -5,6 +5,8 @@ const mobileNavEvet = () => {
   let mobileNavBtn = document.querySelector(".mobileNavBtn");
   let mobileHeader = document.querySelector("header")
   let mobileNavContent = document.querySelector("nav");
+  let totalBody = document.getElementsByTagName('body')[0];
+  console.log(totalBody, '네비바디작동');
 
    if(mobileNavBtn){
 
@@ -14,12 +16,14 @@ const mobileNavEvet = () => {
 
          return mobileNavBtn.classList.remove("active"),
          mobileHeader.classList.remove("active"),
-         mobileNavContent.classList.remove("active");
+         mobileNavContent.classList.remove("active"),
+         totalBody.classList.remove("hidden");
        }
 
        mobileNavBtn.classList.add("active");
        mobileHeader.classList.add("active");
        mobileNavContent.classList.add("active");
+       totalBody.classList.add("hidden")
 
      })
    }
@@ -86,6 +90,8 @@ const moNavPopOpenEvet = () => {
    let mobileNavButton = document.querySelector(".mobileNavBtn");
    let mobileheader = document.querySelector("header")
    let mobileNav = document.querySelector("nav");
+   let totalBody = document.getElementsByTagName('body')[0];
+   console.log(totalBody, '네비팝업body작동');
 
 
    moNavLoginBtn.addEventListener("click", () => {
@@ -97,9 +103,12 @@ const moNavPopOpenEvet = () => {
     mobileNavButton.classList.remove("active");
     mobileheader .classList.remove("active");
     mobileNav.classList.remove("active");
+    totalBody.classList.add("hidden");
 
 
    })
+
+   totalBody.classList.remove("hidden");
 
   }
 

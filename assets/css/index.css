@@ -14,6 +14,7 @@ html, body{
 div,h1,h2,h3,h4,h5,p,span{ margin:0;}
 button{ border: none;}
 
+.moBr{ display:none;}
 
 #icubeMainWrappers{  
 
@@ -531,7 +532,11 @@ button{ border: none;}
 
       width:114px;
       height:46px;
-      background-position: 85% center;
+      background-position: calc(100% / 1.3) center;
+      background-size: 10px;
+      font-size: 15px;
+      line-height: 18px;
+   
 
    }
 
@@ -546,6 +551,8 @@ button{ border: none;}
    #icubeMainWrappers .icubeMainCont .mainMenuWrappers .mainMenuBoxs .menusCont .titles h3 { 
       font-size: 16px;
       line-height: 19.2px;
+      opacity: 50%;
+      font-weight: 600;
    }
    #icubeMainWrappers .icubeMainCont .mainMenuWrappers .mainMenuBoxs .newsTab .menuSubBtnBoxs .subLogos{ display:none;}
    #icubeMainWrappers .icubeMainCont .mainMenuWrappers .mainMenuBoxs .newsTab .mobilesubLogos{ display:flex;}
@@ -554,7 +561,7 @@ button{ border: none;}
    #icubeMainWrappers .icubeMainCont .mainMenuWrappers .mainMenuBoxs .newsTab{
 
       width:calc(100% - 40px);
-      padding: 20px;
+      padding: 26px 20px 20px 20px;
    }
 
    #icubeMainWrappers .icubeMainCont .mainMenuWrappers .mainMenuBoxs .constructTab{
@@ -565,7 +572,7 @@ button{ border: none;}
    #icubeMainWrappers .icubeMainCont .mainMenuWrappers .mainMenuBoxs .constructTab .constructTabCont01{
 
       width:calc(100% - 40px);
-      padding:20px;
+      padding:26px 20px 20px 20px;
       max-height: 277px;
    }
 
@@ -607,11 +614,12 @@ button{ border: none;}
    #icubeMainWrappers .icubeMainCont .mainMenuWrappers .mainMenuBoxs .constructTab .constructTabCont02 .weatherConts li .pcweatherIcon { display:none;}
    #icubeMainWrappers .icubeMainCont .mainMenuWrappers .mainMenuBoxs .constructTab .constructTabCont02 .weatherConts li h2{ text-align: center; padding-bottom:4px; font-size: 14px; line-height: 16.8px;}
    #icubeMainWrappers .icubeMainCont .mainMenuWrappers .mainMenuBoxs .constructTab .constructTabCont02 .weatherConts li p{ text-align: center; font-size: 12px; line-height: 14.4px;}
-   #icubeMainWrappers .icubeMainCont .mainMenuWrappers .mainMenuBoxs .constructTab .constructTabCont .constructTabLinks{ gap:20px 25px;}
+   #icubeMainWrappers .icubeMainCont .mainMenuWrappers .mainMenuBoxs .constructTab .constructTabCont .constructTabLinks{ gap:20px 25px; }
    #icubeMainWrappers .icubeMainCont .mainMenuWrappers .mainMenuBoxs .constructTab .constructTabCont .constructTabLinks a {
-   width: calc(21.9% - 10px);
-   max-width:140px;
-   min-width:140px;
+   width:auto;
+   min-width: calc(20% - 20px);
+   max-width: calc(20% - 15px);
+   flex:1;
    }
 
    #icubeMainWrappers .icubeMainCont .mainMenuWrappers .mainMenuBoxs .constructTab .constructTabCont02 .weatherInfoBoxs{
@@ -634,16 +642,16 @@ button{ border: none;}
 
 @media all and (max-width:768px){
 
+   .moBr{ display:block;}
    #icubeMainWrappers .icubeMainCont .mainMenuWrappers .mainMenuBoxs .constructTab .constructTabCont03 { background-color: transparent;}
    #icubeMainWrappers .icubeMainCont .mainMenuWrappers .mainMenuBoxs .constructTab .constructTabCont03 img{
 
       object-fit: fill;
     }
-}
 
-@media all and (max-width:380px){
-   #icubeMainWrappers .icubeMainCont .mainMenuWrappers .mainMenuBoxs .constructTab .constructTabCont .constructTabLinks a {
+    #icubeMainWrappers .icubeMainCont .mainMenuWrappers .mainMenuBoxs .constructTab .constructTabCont .constructTabLinks a {
 
-      min-width:130px;
-    }
+      min-width: calc(50% - 20px);
+      max-width: calc(50% - 15px);
+      }
 }
