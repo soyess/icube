@@ -1,0 +1,215 @@
+@charset "utf-8";
+
+* { margin:0; padding:0;}
+a { text-decoration: none;}
+ul li { list-style: none;}
+html, body{ 
+   margin:0; 
+   padding:0; 
+   font-family: Pretendard;
+   background-color: #141414;
+}
+div,h1,h2,h3,h4,h5,p,span{ margin:0;}
+button{ 
+   border: none;
+   background-color: transparent;
+}
+
+#constructWrappers{ 
+
+   position: relative;
+}
+.constructWrap{
+
+   padding:100px 120px 122px;
+   margin:0 auto;
+}
+
+.constructWrap .constructBanners{
+
+   width: 100%;
+   height:170px;
+   margin-bottom: 20px;
+   border-radius: 6px;
+   overflow: hidden;
+
+}
+.constructWrap .constructBanners img{
+
+   width: 100%;
+   height:100%;
+   object-fit: contain;
+}
+
+.constructWrap .constructBanners .moBanners{ display: none;}
+
+.constructWrap .constructBoxs{
+
+ 
+   padding:20px 30px;
+   border-radius: 6px;
+   background-color: #F4F4F414;
+   position: relative;
+   
+}
+
+.constructWrap .constructBoxs .constructTabWrappers{
+
+   width: 100%;
+   margin:0 auto;
+
+}
+.constructWrap .constructBoxs .constructTabWrappers h3{
+
+   color:#fff;
+   font-weight: 600;
+   font-size: 22px;
+   line-height: 26.4px;
+   letter-spacing: 0.2px;
+
+}
+
+.constructWrap .constructBoxs .constructTabWrappers .constructTabBoxs{
+
+   width: 100%;
+   margin:0 auto;
+   display: flex;
+   border-bottom: 1px solid #2E2E2E;
+   padding:20px 0px 0px;
+
+}
+
+.constructWrap .constructBoxs .constructTabWrappers .constructTabBoxs button{
+
+   width: 135px;
+   height:calc(47px - 14px);
+   padding-bottom:14px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color:#868686;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19.2px;
+   letter-spacing: 0.2px;
+   position: relative;
+}
+
+.constructWrap .constructBoxs .constructTabWrappers .constructTabBoxs button.active{
+
+   color:#5B9DFF;
+
+}
+.constructWrap .constructBoxs .constructTabWrappers .constructTabBoxs button::after{
+
+   content: "";
+   position: absolute;
+   width:0px;
+   height:2px;
+   background-color: #5B9DFF;
+   bottom:0;
+   left:0;
+}
+
+.constructWrap .constructBoxs .constructTabWrappers .constructTabBoxs button.active::after{
+
+   width: 100%;
+   transition: 800ms;
+}
+
+.constructWrap .constructBoxs .constructDataBoxs{
+
+   width: 100%;
+   margin:0 auto;
+   padding-top:20px;
+}
+
+
+.constructWrap .constructBoxs .constructDataBoxs .constructDataConts{
+
+   width: 100%;
+   height: 1000px;
+   margin:0 auto;
+   position: relative;
+}
+
+.constructWrap .constructBoxs .constructDataBoxs .constructDataConts .constructDataSpace{
+
+   width: 100%;
+   height:100%;
+   background-color: #2F2F2F;
+   border-radius: 10px;
+   position: absolute;
+   display: none;
+
+   
+}
+
+.constructWrap .constructBoxs .constructDataBoxs .constructDataConts .constructDataSpace:nth-child(1){
+   border:1px solid yellow;
+}
+.constructWrap .constructBoxs .constructDataBoxs .constructDataConts .constructDataSpace:nth-child(2){
+   border:1px solid green;
+}
+.constructWrap .constructBoxs .constructDataBoxs .constructDataConts .constructDataSpace:nth-child(3){
+   border:1px solid blue;
+}
+.constructWrap .constructBoxs .constructDataBoxs .constructDataConts .constructDataSpace:nth-child(4){
+   border:1px solid orange;
+}
+.constructWrap .constructBoxs .constructDataBoxs .constructDataConts .constructDataSpace:nth-child(5){
+   border:1px solid white;
+}
+
+.constructWrap .constructBoxs .constructDataBoxs .constructDataConts .constructDataSpace.active{
+
+   display: block;
+}
+
+.constructWrap .constructBoxs .pageNationWrappers{ 
+   margin-top:20px;
+}
+
+
+@media all and (max-width:1080px){
+
+   .constructWrap { padding: 64px 15px 120px; }
+   .constructWrap .constructBanners{height:130px;}
+   .constructWrap .constructBanners img{ object-fit:cover; width:auto;}
+   .constructWrap .constructBoxs .constructDataBoxs .constructDataConts { height:1600px;}
+   .constructWrap .constructBoxs .constructTabWrappers .constructTabBoxs{ justify-content: center;}
+   .constructWrap .constructBoxs { padding:30px 20px 20px;}
+}
+
+
+@media all and (max-width:768px){
+
+   .constructWrap .constructBanners .pcBanners{ display:none;}
+   .constructWrap .constructBanners .moBanners{ 
+      display:block; 
+      width: 100%;
+      height:100%;
+      object-fit: fill;
+   }
+   .constructWrap .constructBoxs .constructTabWrappers h3{ 
+         font-size: 16px;
+         line-height: 19.2px;
+      }
+
+   .constructWrap .constructBoxs .constructTabWrappers .constructTabBoxs{ justify-content: space-between;}
+   .constructWrap .constructBoxs .constructTabWrappers .constructTabBoxs button {
+
+      width: 82px;
+      height:calc(40px - 10.65px);
+      padding-bottom: 10.65px;
+      line-height: 16.8px;
+      font-size: 14px;
+   }
+      
+} 
+
+@media all and (max-width:500px){
+
+   .constructWrap .constructBoxs .constructTabWrappers .constructTabBoxs{overflow-x: scroll;}
+   .constructWrap .constructBoxs .constructTabWrappers .constructTabBoxs button{ white-space: nowrap;}
+}

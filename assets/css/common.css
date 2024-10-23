@@ -1,0 +1,413 @@
+@charset "utf-8";
+@import url(../css/popup/popup.css);
+
+
+* { margin:0; padding:0;}
+a { text-decoration: none;}
+ul li { list-style: none;}
+html, body{ 
+   margin:0; 
+   padding:0; 
+   font-family: Pretendard;
+   background-color: #000;
+}
+div,h1,h2,h3,h4,h5,p,span{ margin:0;}
+button{ 
+   border: none;
+   background-color: transparent;
+}
+
+
+.icubeHeader { 
+
+   width: 100%;
+   position:absolute;
+   
+}
+
+/* header */
+
+header { 
+
+   position:absolute;
+   background-color: transparent;
+   width: 100%;
+   height:100px;
+   overflow: hidden;
+}
+
+header .pcHeaders{
+
+   width: 100%;
+   height: 100%;
+   margin:0 auto;
+   display: flex;
+   align-items: center;
+   background-color: transparent;
+   
+}
+
+header .pcHeaders .logoBoxs{
+
+   height:100%;
+   display: flex;
+   align-items: center;
+   padding-left:120px;
+}
+
+header .pcHeaders .logoBoxs img{
+
+   height:14.5px;
+   object-fit: contain;
+
+}
+
+header .pcHeaders p { 
+   color:#fff;
+   font-size: 16px;
+   line-height:19.2px;
+   font-weight: 400;
+   letter-spacing: 0.2px;
+   padding:0px 0px 0px 16px;
+}
+
+header .pcHeaders .mobileNavBtn{ display:none;}
+header nav{ display:none;}
+
+/**/
+
+/* footer */
+
+footer {
+
+    width: 100%;
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+ }
+ 
+ footer p {
+ 
+    font-size: 11px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #fff;
+    opacity: 40%;
+ }
+ 
+ .icubeFooter{
+ 
+    width: 100%;
+    position: absolute;
+    bottom:50px;
+    
+ }
+
+
+ /* pagenation */
+
+.pageNationWrappers{
+
+   position: relative;
+   width: 100%;
+   margin:0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index:999;
+}
+
+.pageNationWrappers .pageNationBoxs{
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pageNationWrappers .pageNationBoxs button{
+
+  width: 24px;
+  height: 24px;
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.pageNationWrappers .pageNationBoxs button.pagePrev{
+  background-image: url(/assets/images/news/pagePrev.png);
+  margin-right:8px;
+}
+
+.pageNationWrappers .pageNationBoxs button.pageNext{
+  background-image: url(/assets/images/news/pageNext.png);
+  margin-left:8px;
+}
+
+
+.pageNationWrappers .pageNationBoxs span{
+
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 14.32px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  border-radius: 8px;
+  color: #fff;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.pageNationWrappers .pageNationBoxs span:hover, .pageNationWrappers .pageNationBoxs span.active{
+  
+  background-color: #2F2F2F;
+  backdrop-filter: blur(30px);
+  color:#5B9DFF;
+
+}
+
+
+
+@media all and (max-width:1080px){
+
+   header { 
+      position: fixed; 
+      left:0; 
+      top:0;
+      z-index:999999;
+      background-color: #141414;
+      height:64px;
+   }
+
+   header.active{
+      height:100%;
+      background-color: #18212D66;
+      backdrop-filter: blur(60px);
+      transition: height 500ms;
+   }
+
+
+   header .pcHeaders{ 
+      width:calc(100% - 30px);
+      height:64px;
+      padding:0px 15px;
+      justify-content: space-between;
+      background-color: transparent;
+   }
+
+   header .pcHeaders .logoBoxs{ padding-left:0px; }
+   header .pcHeaders .logoBoxs img { height:12.5px;}
+   header .pcHeaders .pcHeaderTitles {display:none;}
+   header .pcHeaders .mobileNavBtn{ 
+      display:flex; 
+      align-items: center; 
+      justify-content: center;
+      width:36px;
+      height:36px;
+      background-image: url(/assets/images/moNav/moNavBtn.png);
+      background-size: 36px;
+      background-position: center center;
+      background-repeat: no-repeat;
+   
+   }
+
+   header .pcHeaders .mobileNavBtn.active{
+      background-image: url(/assets/images/moNav/moNavClose.png);
+   }
+
+   /* 모바일메뉴 */
+
+   header nav{ 
+
+      display:block;
+      width:calc(100% - 40px);
+      height:0px;
+      overflow: hidden;
+      padding:0px 20px;
+      background-color: #18212D66;
+      backdrop-filter: blur(60px);
+
+   }
+
+   header nav.active{
+
+      height:100vh;
+      transition: 500ms;
+   }
+
+   header nav section{
+
+      width: 100%;
+      height: calc(100% - 80px);
+      padding:50px 0px 30px;
+      margin:0 auto;
+      position: relative;
+
+   }
+
+   header nav section .moNavLoginBoxs{
+
+       width: 100%;
+
+   }
+
+   header nav section .moNavLoginBoxs ul{
+
+      display: flex;
+      gap:16px;
+      padding-bottom:30px;
+
+   }
+
+   header nav section .moNavLoginBoxs ul li img { height:50px;}
+   header nav section .moNavLoginBoxs ul li h3{ 
+      color:#fff;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21.6px;
+      letter-spacing: 0.2px;
+      padding-bottom: 6px;
+   }
+   header nav section .moNavLoginBoxs ul li p{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16.8px;
+      color:#fff;
+   }
+
+   header nav section .moNavLoginBoxs button{
+
+      width: 100%;
+      height:46px;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0px 0px 20px 0px #0000000F;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      color:#272727;
+      cursor: pointer;
+      background-image: url(/assets/images/arrowNext.png);
+      background-position: 70% center;
+      background-repeat: no-repeat;
+      background-size: 12px;
+
+   }
+   
+   header nav section .moNavMenuBoxs{
+
+      width:100%;
+      padding-top:40px;
+      margin:0 auto;
+
+   }
+
+   header nav section .moNavMenuBoxs ul{
+
+   }
+
+   header nav section .moNavMenuBoxs ul li{ 
+      border-top:1px solid #FFFFFF1F;
+      
+   }
+
+   header nav section .moNavMenuBoxs ul li:last-child{
+
+      border-bottom:1px solid #FFFFFF1F;
+   }
+
+   header nav section .moNavMenuBoxs ul li a{
+
+      color:#fff;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21.6px;
+      letter-spacing: 0.2px;
+      display: block;
+      width: calc(100% - 20px);
+      height:calc(100% - 56px);
+      padding:28px 10px;
+      background-repeat: no-repeat;
+      background-size: 21px;
+      background-position: right center;
+   }
+
+   header nav section .moNavMenuBoxs ul li a:hover{
+
+       background-image: url(/assets/images/moNav/navArrowNext.png);
+       transition: 800ms;
+
+       
+   }
+
+   header nav .moNavComInfo{ 
+      
+      font-size: 11px; 
+      line-height: 20px;
+      align-items: center;
+      font-weight: 300;
+      color:#FFFFFF66;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom:30%;
+      width: 100%;
+      
+
+   }
+
+   .pageNationWrappers .pageNationBoxs button { 
+      
+      width: 36px; 
+      height: 36px; 
+      background-size: 36px;
+
+   }
+   
+   .pageNationWrappers .pageNationBoxs span{
+
+      width: 36px;
+      height: 36px;
+      font-size: 13px;
+      line-height: 36px;
+   }
+
+}
+
+
+@media all and (max-width:768px){
+
+   .icubeFooter {
+
+      bottom: 40px;
+  }
+  .pageNationWrappers .pageNationBoxs button.pagePrev{ margin-right: 6px;}
+
+.pageNationWrappers .pageNationBoxs button.pageNext{ margin-left: 6px;}
+}
+
+@media all and (max-width:350px){
+
+   .pageNationWrappers .pageNationBoxs button { 
+      
+      width: 28px; 
+      height: 28px; 
+      background-size: 28px;
+
+   }
+   
+   .pageNationWrappers .pageNationBoxs span{
+
+      width: 28px;
+      height: 28px;
+      line-height: 28px;
+   }
+}

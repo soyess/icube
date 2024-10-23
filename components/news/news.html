@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/news/news.css">
+    <link rel="stylesheet" href="/assets/css/demo.css">
+      <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="/assets/css/swiper.css">
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div id="newsWrappers">
+        <div class="icubeHeader"></div>
+        <div class="newsWrap">
+           <section class="newsBanners">
+            <img src="/assets/images/news/newsBanner.png" alt="banners" class="pcBanners">
+            <img src="/assets/images/news/moNewsBanners.png" alt="banners" class="moBanners">
+          </section>
+           <section class="newsBoxs">
+               <div class="newsToday newsInfoBoxs">
+                  <div class="todayNewsTitles">
+                      <ul>
+                        <h3>오늘의 주요뉴스</h3>
+                        <p class="newsTodayDates">2024년 10월 8일 화요일</p>
+                      </ul>
+                      <ul>
+                         <img src="/assets/images/poweredLogos.png" alt="logo">
+                      </ul>
+                  </div>
+                  <div class="newsWeb">
+                  <div class="todaysMain">
+                    <a href="/components/news/newsDetails.html">
+                    <h2></h2>
+                    <p></p>
+                    <div class="imgboxs">
+                        <img src="/assets/images/news/articleImg.png" alt="articeImgs">
+                    </div>
+                  </a>
+                  </div>
+                  <div class="todaysSub"></div>
+                </div>
+                <div class="newsMobile">
+                     <!-- Swiper -->
+                        <div class="swiper newsMoSwiper">
+                            <div class="swiper-wrapper">
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                </div>
+               </div>
+               <div class="newsPast newsInfoBoxs">
+                 <div class="pastNewsTitles">
+                    <ul>
+                      <h3>과거 뉴스</h3>
+                      <div class="newsSelectWrappers">
+                       <div class="newsPastSelectBoxs">
+                        <select
+                        name=""
+                        class="newsPastHiddenSelect"
+                        id="newsPastHiddenSelectBox01"
+                        hidden>
+                      </select>
+                         <!--보여지는 셀렉박스-->
+                        <div class="newsPastSelects">
+                        <button class="newsPastSelectsTitleBtn"></button>
+                        <div class="newsPastSelectList">
+                            <ul class="newsPastSelectListMember"></ul>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="newsPastSelectBoxs">
+                        <select
+                        name=""
+                        class="newsPastHiddenSelect"
+                        id="newsPastHiddenSelectBox02"
+                        hidden>
+                        <option value="일별통계">일별통계</option>
+                        <option value="월별통계">월별통계</option>
+                        <option value="월별통계_시계열">월별통계_시계열</option>
+                      </select>
+                         <!--보여지는 셀렉박스-->
+                        <div class="newsPastSelects">
+                        <button class="newsPastSelectsTitleBtn"></button>
+                        <div class="newsPastSelectList">
+                            <ul class="newsPastSelectListMember"></ul>
+                        </div>
+                        </div>
+                    </div>
+
+                      </div>
+                    </ul>
+                </div>
+                <div class="pastNewsCont"></div>
+                <div class="pageNationWrappers">
+                    <div class="pageNationBoxs">
+                        <button class="pagePrev"></button>
+                        <div class="pageNatioNumbers">
+                            <span>1</span>
+                            <span>2</span>
+                            <span>3</span>
+                            <span>4</span>
+                            <span>5</span>
+                        </div>
+                        <button class="pageNext"></button>
+                    </div>
+                </div>
+               </div>
+           </section>
+        </div>
+        <div class="icubeFooter"></div>
+    </div>
+    <div id="popupWrappers"></div>
+    <script type="module" src="/js/index.js"></script>
+    <script src="/js/news/news.js"></script>
+    <script src="/js/pageNation.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        let newsSwiper = new Swiper(".newsMoSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+        },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+        });
+    </script>
+</body>
+</html>

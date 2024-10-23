@@ -1,0 +1,277 @@
+@charset "utf-8";
+
+* { margin:0; padding:0;}
+a { text-decoration: none;}
+ul li { list-style: none;}
+div,h1,h2,h3,h4,h5,p,span{ margin:0;}
+button{ border: none; font-family: Pretendard;}
+input:focus{ outline: none;}
+
+#popupWrappers{
+
+    position: fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    display:none;
+    z-index:999999;
+
+}
+
+#popupWrappers::before{
+
+    position: absolute;
+    display: block;
+    content: '';
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    background-color: #000;
+    opacity: 50%;
+    
+}
+#popupWrappers.active{ 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.popupWrap{
+
+    max-width: 1000px;
+    height:680px;
+    margin:0 auto;
+    font-family: Pretendard;
+    position: absolute;
+    z-index:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.popupWrap .loginPages{
+
+    width:100%;
+    height:100%;
+    margin:0 auto;
+    display: flex;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #3E4D6066;
+    backdrop-filter: blur(60px);
+    
+}
+
+.popupWrap .loginPages .loginSection{
+
+    width:calc(40% - 66px);
+    padding:100px 66px 76px;
+  
+
+}
+
+.popupWrap .loginPages .loginSection ul{
+
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+.popupWrap .loginPages .loginSection ul li{}
+.popupWrap .loginPages .loginSection ul li img{
+
+    height:60px;
+    object-fit: contain;
+    opacity: 50%;
+}
+
+.popupWrap .loginPages .loginSection ul li h1{ 
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 59.67px;
+    letter-spacing: 0.2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+}
+.popupWrap .loginPages .loginSection ul li p{
+
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15.51px;
+    align-items: center;
+    color:#FFFFFF;
+    padding-top:10px;
+}
+.popupWrap .loginPages .loginSection .loginFormBoxs{ 
+    padding-top:76px;
+}
+
+.popupWrap .loginPages .loginSection .loginFormBoxs .loginInfo{
+   margin-bottom: 30px;
+}
+.popupWrap .loginPages .loginSection .loginFormBoxs .loginInfo:first-child{
+   margin-bottom: 20px;
+}
+.popupWrap .loginPages .loginSection .loginFormBoxs .loginInfo input{
+
+    width: 220px;
+    height: 50px;
+    padding:0px 20px;
+    border-radius: 8px;
+    border: 1px solid #E4E4E40A;
+    background-color: transparent;
+    color:#E4E4E4;
+
+
+}
+
+.popupWrap .loginPages .loginSection .loginFormBoxs .loginInfo p{
+
+    color:#FFFFFF;
+    font-weight: 400;
+    font-size: 11px;
+    padding-bottom:8px;
+}
+
+.popupWrap .loginPages .loginSection .loginFormBoxs button{
+
+    height:50px;
+    width: 100%;
+    background-color: #fff;
+    color:#272727;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15.6px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    padding:0px 20px;
+    cursor: pointer;
+    background-image: url(/assets/images/arrowNext.png);
+    background-position: 95% center;
+    background-repeat: no-repeat;
+    background-size: 8px;
+    box-shadow: 0px 0px 20px 0px #0000000F;
+
+}
+
+.popupWrap .loginPages .loginBanner{
+    
+    width:60%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popupWrap .loginPages .loginBanner img{
+
+    height:100%;
+    object-fit: cover;
+}
+
+.popupWrap .closeBtn{
+
+    position: absolute;
+    right:20px;
+    top:20px;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(30px);
+}
+
+.popupWrap .closeBtn img{
+
+    width: 10.83px;
+    height: 10.83px;
+    object-fit: cover;
+}
+
+
+/* 반응형 */
+
+@media all and (max-width:1080px){
+
+    .popupWrap {
+
+        max-width:auto;
+        width:100%;
+        height:calc(100% - 102px);
+        bottom:0px;
+        border-radius: 20px;
+    }
+    .popupWrap .loginPages { 
+        border-radius: 0px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        background:linear-gradient( #426EA44D 0 30%,#1F2C434D 50% 30%);
+        box-shadow: 0px 0px 20px 0px #00000040;
+    }
+    .popupWrap .loginPages .loginSection { 
+        width: calc(100% - 30px);
+        padding:86px 15px 100px;
+    }
+
+    .popupWrap .loginPages .loginSection ul {
+
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .popupWrap .loginPages .loginSection ul li h1 {
+
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .popupWrap .loginPages .loginSection .loginFormBoxs { padding-top:60px;}
+    .popupWrap .loginPages .loginSection .loginFormBoxs form { width: 100%;}
+    .popupWrap .loginPages .loginSection .loginFormBoxs button { 
+        font-size: 15px; 
+        height:56px; 
+        justify-content: center;
+        background-size: 12px;
+        background-position: 60% center;
+
+    }
+    .popupWrap .loginPages .loginSection .loginFormBoxs .loginInfo p { font-size: 13px; padding-bottom: 10px;}
+    .popupWrap .loginPages .loginSection .loginFormBoxs .loginInfo input{
+
+        width:calc(100% - 40px);
+        height:56px;
+        background-color: #E4E4E40A;
+    }
+    .popupWrap .loginPages .loginBanner { display:none;}
+    .popupWrap .closeBtn {
+        
+        width: 36px;
+        height: 36px;
+        background-color: transparent;
+    }
+
+    .popupWrap .closeBtn img{
+
+        width: 25px;
+        height: 25px;
+        filter: invert(100);
+    }
+}
+
+@media all and (max-width:360px){
+
+    .popupWrap .loginPages .loginSection .loginFormBoxs button { 
+        background-position: 65% center;
+    }
+}
