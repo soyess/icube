@@ -246,6 +246,8 @@ const pastNewsData = async () => {
             }
             
             newsPastSelectList.forEach((otherList) => otherList.classList.remove("active"));
+            newSelectTitleBtns.forEach((otherbtns) => otherbtns.classList.remove("active"));
+            
             btns.classList.add("active");
             lists.classList.add("active");
 
