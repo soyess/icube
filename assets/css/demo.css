@@ -35,10 +35,12 @@
    line-height: 15.6px;
    font-weight: 400;
    letter-spacing: 0.2px;
+   font-family: Pretendard;
 }
  .newsMoSwiper .swiper-pagination span{ 
 
     color:#fff;
+    font-family: Pretendard;
    }
    
 .newsMoSwiper .swiper-pagination-current { 

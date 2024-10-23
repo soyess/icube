@@ -62,7 +62,7 @@ input:focus{ outline: none;}
     display: flex;
     border-radius: 6px;
     overflow: hidden;
-    background-color: #3E4D6066;
+    background-color: rgba(62, 77, 96, 0.4);
     backdrop-filter: blur(60px);
     
 }
@@ -188,7 +188,7 @@ input:focus{ outline: none;}
     position: absolute;
     right:20px;
     top:20px;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     border-radius: 8px;
     width: 24px;
     height: 24px;

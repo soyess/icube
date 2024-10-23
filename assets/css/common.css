@@ -172,7 +172,7 @@ footer {
 
 .pageNationWrappers .pageNationBoxs span:hover, .pageNationWrappers .pageNationBoxs span.active{
   
-  background-color: #2F2F2F;
+  background-color: rgb(47, 47, 47);
   backdrop-filter: blur(30px);
   color:#5B9DFF;
 
@@ -193,7 +193,7 @@ footer {
 
    header.active{
       height:100%;
-      background-color: #18212D66;
+      background-color: rgba(24, 33, 45, 0.4);
       backdrop-filter: blur(60px);
    }
 
@@ -235,7 +235,7 @@ footer {
       height:0px;
       overflow: hidden;
       padding:0px 20px;
-      background-color: #18212D66;
+      background-color: rgba(24, 33, 45, 0.4);
       backdrop-filter: blur(60px);
       opacity: 0;
 

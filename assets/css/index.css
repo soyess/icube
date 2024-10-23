@@ -493,6 +493,7 @@ button{ border: none;}
        background-image: url(/icube/assets/images/main/mainMoBackgroundImg.png);
        background-position: left top;
        background-size: 100%;
+       background-attachment: fixed;
 
       }
 
