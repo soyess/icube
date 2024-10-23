@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url(../css/popup/popup.css);
+@import url(/icube/css/popup/popup.css);
 
 
 * { margin:0; padding:0;}
@@ -139,12 +139,12 @@ footer {
 }
 
 .pageNationWrappers .pageNationBoxs button.pagePrev{
-  background-image: url(/assets/images/news/pagePrev.png);
+  background-image: url(/icube/assets/images/news/pagePrev.png);
   margin-right:8px;
 }
 
 .pageNationWrappers .pageNationBoxs button.pageNext{
-  background-image: url(/assets/images/news/pageNext.png);
+  background-image: url(/icube/assets/images/news/pageNext.png);
   margin-left:8px;
 }
 
@@ -211,7 +211,7 @@ footer {
       justify-content: center;
       width:36px;
       height:36px;
-      background-image: url(/assets/images/moNav/moNavBtn.png);
+      background-image: url(/icube/assets/images/moNav/moNavBtn.png);
       background-size: 36px;
       background-position: center center;
       background-repeat: no-repeat;
@@ -219,7 +219,7 @@ footer {
    }
 
    header .pcHeaders .mobileNavBtn.active{
-      background-image: url(/assets/images/moNav/moNavClose.png);
+      background-image: url(/icube/assets/images/moNav/moNavClose.png);
    }
 
    /* 모바일메뉴 */
@@ -294,7 +294,7 @@ footer {
       line-height: 18px;
       color:#272727;
       cursor: pointer;
-      background-image: url(/assets/images/arrowNext.png);
+      background-image: url(/icube/assets/images/arrowNext.png);
       background-position: 70% center;
       background-repeat: no-repeat;
       background-size: 12px;
@@ -341,7 +341,7 @@ footer {
 
    header nav section .moNavMenuBoxs ul li a:hover{
 
-       background-image: url(/assets/images/moNav/navArrowNext.png);
+       background-image: url(/icube/assets/images/moNav/navArrowNext.png);
        transition: 800ms;
 
        

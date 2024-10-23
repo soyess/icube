@@ -1,7 +1,7 @@
 const icubeFooterEvet = () => {
    
     let icubeFooter = document.querySelector(".icubeFooter");
-    let htmlFilePath = '/footer.html'; // 삽입할 HTML 파일 경로
+    let htmlFilePath = '/icube/footer.html'; // 삽입할 HTML 파일 경로
  
     if(icubeFooter){
  

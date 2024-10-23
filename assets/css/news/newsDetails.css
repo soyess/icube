@@ -76,7 +76,7 @@ textarea:focus{ outline: none;}
    line-height: 19.2px;
    letter-spacing: 0.2px;
    color:#fff;
-   background-image: url(/assets/images/news/arrowBefore.png);
+   background-image: url(/icube/assets/images/news/arrowBefore.png);
    background-position: 0px center;
    background-repeat: no-repeat;
    background-size: 26px;
@@ -111,7 +111,7 @@ textarea:focus{ outline: none;}
   letter-spacing: 0.2px;
   line-height: 15.6px;
   color:#fff;
-  background-image: url(/assets/images/news/shareBtn.png);
+  background-image: url(/icube/assets/images/news/shareBtn.png);
   background-size: 18px;
   background-position: right center;
   background-repeat: no-repeat;
@@ -224,7 +224,7 @@ textarea:focus{ outline: none;}
    display: flex;
    align-items: center;
    justify-content: center;
-   background-image: url(/assets/images/news/arrowArticles.png);
+   background-image: url(/icube/assets/images/news/arrowArticles.png);
    background-position: 95% center;
    background-repeat: no-repeat;
    background-size: 12px;

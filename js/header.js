@@ -1,7 +1,7 @@
 const icubeHeaderEvet = () => {
    
    let icubeHeader = document.querySelector(".icubeHeader");
-   let htmlFilePath = '/header.html'; // 삽입할 HTML 파일 경로
+   let htmlFilePath = '/icube/header.html'; // 삽입할 HTML 파일 경로
 
    if(icubeHeader){
 

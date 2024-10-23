@@ -3,7 +3,7 @@
 const icubePopupEvet = () => {
    
     let icubePopUp = document.getElementById("popupWrappers");
-    let PopUpHtmlFilePath = '/components/popup/popup.html'; // 삽입할 HTML 파일 경로
+    let PopUpHtmlFilePath = '/icube/components/popup/popup.html'; // 삽입할 HTML 파일 경로
  
     console.log(icubePopUp);
     

@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url(/assets/css/popup/popup.css);
+@import url(/icube/assets/css/popup/popup.css);
 
 
 * { margin:0; padding:0;}
@@ -29,7 +29,7 @@ button{ border: none;}
 
    width: 100vw;
    height: 100vh;
-   background-image: url(/assets/images/main/mainBackgroundImg.png);
+   background-image: url(/icube/assets/images/main/mainBackgroundImg.png);
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
@@ -109,7 +109,7 @@ button{ border: none;}
    justify-content:flex-start;
    padding:0px 20px;
    cursor: pointer;
-   background-image: url(/assets/images/arrowNext.png);
+   background-image: url(/icube/assets/images/arrowNext.png);
    background-position: 95% center;
    background-repeat: no-repeat;
    background-size: 8px;
@@ -311,7 +311,7 @@ button{ border: none;}
    display: flex;
    align-items: center;
    justify-content:flex-start;
-   background-image: url(/assets/images/arrowLinks.png);
+   background-image: url(/icube/assets/images/arrowLinks.png);
    background-position: 96% 20px;
    background-repeat: no-repeat;
    background-size: 24px;
@@ -468,7 +468,7 @@ button{ border: none;}
    #icubeMainWrappers .icubeMainCont{
        align-items: unset;
        height:100%;
-       background-image: url(/assets/images/main/mainMoBackgroundImg.png);
+       background-image: url(/icube/assets/images/main/mainMoBackgroundImg.png);
        background-position: left top;
        background-size: 100%;
 

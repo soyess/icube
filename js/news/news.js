@@ -22,7 +22,7 @@ todayEvet();
 /* 오늘의 주요뉴스 리스트 불러오기 */
 const getData = async () => {
 
-        const response = await fetch('/json/news/news.json');
+        const response = await fetch('/icube/json/news/news.json');
         const data = await response.json();
         const answers = data.news;
         console.log('주요뉴스리스트데이터', answers);
@@ -89,11 +89,11 @@ const getData = async () => {
                     answers.forEach((list,index) => {
                         ListWrappers += `
                               <div class="swiper-slide">
-                               <a href="/components/news/newsDetails.html">
+                               <a href="/icube/components/news/newsDetails.html">
                                  <h3>${list.title}</h3>
                                  <p>${list.contents}</p>
                                  <div class="mobileSlidersImg">
-                                   <img src="/assets/images/news/${list.imgs}"/>
+                                   <img src="/icube/assets/images/news/${list.imgs}"/>
                                  </div>
                                  </a>
                               </div>`  
@@ -130,7 +130,7 @@ const pastNewsData = async () => {
 
         pastAnswers.forEach((list) => {
             pastListWrappers += ` 
-               <a href="/components/news/newsDetails.html">
+               <a href="/icube/components/news/newsDetails.html">
                  <ul>
                     <li>
                         <h3>${list.title}</h3>
