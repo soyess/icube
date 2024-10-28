@@ -9,7 +9,7 @@ const todayDates = todays.getDate();
 const todayDays = todays.getDay();
 
 const monthArray = [ "1월" , "2월", "3월" , "4월" , "5월" , "6월" , "7월" , "8월" , "9월" , "10월" , "11월" , "12월"];
-const daysArray = ["월요일" , "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"]
+const daysArray = ["일요일", "월요일" , "화요일", "수요일", "목요일", "금요일", "토요일"]
 let todayBoxs = document.querySelector(".newsTodayDates");
 
 todayBoxs.textContent = `${todayYears}년 ${monthArray[todayMonths]} ${todayDates}일 ${daysArray[todayDays]}`;
