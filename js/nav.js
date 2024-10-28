@@ -1,6 +1,6 @@
 /* 모바일 네비 버튼 클릭시, 메뉴오픈 */
 
-const mobileNavEvet = () => {
+function mobileNavEvet(){
 
   let mobileNavBtn = document.querySelector(".mobileNavBtn");
   let mobileHeader = document.querySelector("header")
