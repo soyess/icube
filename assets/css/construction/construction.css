@@ -32,16 +32,39 @@ button{
    margin-bottom: 20px;
    border-radius: 6px;
    overflow: hidden;
+   position: relative;
+   background-image: url('/icube/assets/images/construction/constructionBanner.png');
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
 
 }
-.constructWrap .constructBanners img{
 
-   width: 100%;
-   height:100%;
-   object-fit: contain;
+.constructWrap .constructBanners .constructBannerTitles{
+
+   position: absolute;
+   left:0;
+   top:0;
+   padding:30px;
 }
 
-.constructWrap .constructBanners .moBanners{ display: none;}
+.constructWrap .constructBanners .constructBannerTitles h3{
+
+   color:#fff;
+   font-size: 28px;
+   line-height: 33.41px;
+   font-weight: 600;
+   padding-bottom: 8px;
+}
+
+.constructWrap .constructBanners .constructBannerTitles p {
+
+   color:#fff;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 18px;
+}
+
 
 .constructWrap .constructBoxs{
 
@@ -158,81 +181,86 @@ button{
 
 @media all and (max-width:1080px){
 
-   .constructWrap { padding: 64px 15px 120px; }
-   .constructWrap .constructBanners{height:130px;}
-   .constructWrap .constructBanners img{ object-fit:cover; width:auto;}
-   .constructWrap .constructBoxs .constructDataBoxs .constructDataConts { height:1600px;}
-   .constructWrap .constructBoxs .constructTabWrappers .constructTabBoxs{ justify-content: center;}
-   .constructWrap .constructBoxs { padding:30px 20px 20px;}
+.constructWrap { padding: 64px 15px 170px; }
+.constructWrap .constructBanners{height:130px;}
+.constructWrap .constructBanners .constructBannerTitles{ padding:20px;}
+
+.constructWrap .constructBanners .constructBannerTitles h3{
+   font-size: 22px;
+   line-height: 26.25px;
+   padding-bottom: 4px;
+}
+
+.constructWrap .constructBanners .constructBannerTitles p {
+   font-size: 13px;
+}
+
+.constructWrap .constructBoxs .constructDataBoxs .constructDataConts { height:1600px;}
+.constructWrap .constructBoxs .constructTabWrappers .constructTabBoxs{ justify-content: center;}
+.constructWrap .constructBoxs { padding:30px 20px 20px;}
+
 }
 
 
 @media all and (max-width:768px){
 
-   .constructWrap .constructBanners .pcBanners{ display:none;}
-   .constructWrap .constructBanners .moBanners{ 
-      display:block; 
-      width: 100%;
-      height:100%;
-      object-fit: fill;
-   }
 
-   .constructWrap .constructBoxs .constructTabWrappers {
+.constructWrap .constructBoxs .constructTabWrappers {
 
-      overflow-x: hidden;
-      position: relative;
-   }
+   overflow-x: hidden;
+   position: relative;
+}
 
-   .constructWrap .constructBoxs .constructTabWrappers::after{
+.constructWrap .constructBoxs .constructTabWrappers::after{
 
-      content: "";
-      background: linear-gradient(90deg, rgba(38,38,38,0) 0%, rgba(38,38,38,1) 100%);
-      position: absolute;
-      bottom:0px;
-      right:-1px;
-      width:56px;
-      height:45px;
-      
+   content: "";
+   background: linear-gradient(90deg, rgba(38,38,38,0) 0%, rgba(38,38,38,1) 100%);
+   position: absolute;
+   bottom:0px;
+   right:-1px;
+   width:56px;
+   height:45px;
+   
 
-   }
-   .constructWrap .constructBoxs .constructTabWrappers h3{ 
-         font-size: 16px;
-         line-height: 19.2px;
-      }
-
-
-   .constructWrap .constructBoxs .constructTabWrappers .constructTabBoxs{ 
-     
-      justify-content: space-evenly;
-      overflow-x: scroll;
-
-
+}
+.constructWrap .constructBoxs .constructTabWrappers h3{ 
+      font-size: 16px;
+      line-height: 19.2px;
    }
 
 
-   .constructWrap .constructBoxs .constructTabWrappers .constructTabBoxs::-webkit-scrollbar {
-      display:none;
-  }
+.constructWrap .constructBoxs .constructTabWrappers .constructTabBoxs{ 
+   
+   justify-content: space-evenly;
+   overflow-x: scroll;
 
-   .constructWrap .constructBoxs .constructTabWrappers .constructTabBoxs button {
 
-      width: 82px;
-      min-width:82px;
-      height:calc(40px - 10.65px);
-      padding-bottom: 10.65px;
-      line-height: 16.8px;
-      font-size: 14px;
-      white-space: nowrap;
-      position: relative;
-      z-index:1;
-      background-color: transparent;
-   }
+}
+
+
+.constructWrap .constructBoxs .constructTabWrappers .constructTabBoxs::-webkit-scrollbar {
+   display:none;
+}
+
+.constructWrap .constructBoxs .constructTabWrappers .constructTabBoxs button {
+
+   width: 82px;
+   min-width:82px;
+   height:calc(40px - 10.65px);
+   padding-bottom: 10.65px;
+   line-height: 16.8px;
+   font-size: 14px;
+   white-space: nowrap;
+   position: relative;
+   z-index:1;
+   background-color: transparent;
+}
 
       
 } 
 
-/* @media all and (max-width:500px){
+@media all and (max-width:768px){
 
-   .constructWrap .constructBoxs .constructTabWrappers .constructTabBoxs{overflow-x: scroll;}
-   .constructWrap .constructBoxs .constructTabWrappers .constructTabBoxs button{ white-space: nowrap;}
-} */
+.constructWrap .constructBanners{ background-image: url(/icube/assets/images/construction/moConstructBanners.png);}
+
+}

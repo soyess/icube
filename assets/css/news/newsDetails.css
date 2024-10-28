@@ -22,7 +22,6 @@ textarea:focus{ outline: none;}
 
 
 #newsDetailsWrapper{ position: relative;}
-
 #newsDetailsWrapper .newsDetailsWrap{
 
    padding:100px 120px;
@@ -37,24 +36,46 @@ textarea:focus{ outline: none;}
    overflow: hidden;
    margin-bottom: 20px;
    border-radius: 6px;
+   position: relative;
+   background-image: url('/icube/assets/images/news/newsBanner.png');
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
 
 }
 
-#newsDetailsWrapper .newsDetailsWrap .newsDetailsBanners img{
+#newsDetailsWrapper .newsDetailsWrap .newsDetailsBanners .newsDetailBannerTitles{
 
-   width: 100%;
-   height:100%;
-   object-fit: contain;
+   position: absolute;
+   left:0;
+   top:0;
+   padding:28px 30px;
 }
 
-#newsDetailsWrapper .newsDetailsWrap .newsDetailsBanners .moBanners{ display: none;}
+#newsDetailsWrapper .newsDetailsWrap .newsDetailsBanners .newsDetailBannerTitles h3{
+
+   color:#fff;
+   font-size: 30px;
+   line-height: 35.8px;
+   font-weight: 600;
+   padding-bottom: 7px;
+}
+
+#newsDetailsWrapper .newsDetailsWrap .newsDetailsBanners .newsDetailBannerTitles p {
+
+   color:#fff;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 18px;
+}
+
 
 #newsDetailsWrapper .newsDetailsWrap .newsDetailsBoxs{
 
  
    padding:20px 30px;
    border-radius: 6px;
-   background-color: #F4F4F414;
+   background-color:#232323;
    
 
 }
@@ -203,7 +224,7 @@ textarea:focus{ outline: none;}
    background-color: transparent;
    border:none;
    resize: none;
-   color:#868686;
+   color:#B1B1B1;
    font-weight: 300;
    font-size: 16px;
    line-height: 26px;
@@ -238,95 +259,98 @@ textarea:focus{ outline: none;}
    padding-top:20px;
 }
 
+
 /* 반응형 */
 
 @media all and (max-width:1700px){
 
-   #newsDetailsWrapper .newsDetailsWrap .newsDetailsBoxs .newsDetailsContBoxs{
-      padding: 50px 236px;
-   }
+#newsDetailsWrapper .newsDetailsWrap .newsDetailsBoxs .newsDetailsContBoxs{
+   padding: 50px 236px;
+}
+
 }
 @media all and (max-width:1300px){
 
-   #newsDetailsWrapper .newsDetailsWrap .newsDetailsBoxs .newsDetailsContBoxs{
-      padding: 50px 136px;
-   }
+#newsDetailsWrapper .newsDetailsWrap .newsDetailsBoxs .newsDetailsContBoxs{
+   padding: 50px 136px;
+}
+
 }
 
 @media all and (max-width:1080px){
 
-   #newsDetailsWrapper .newsDetailsWrap{ padding:64px 15px 120px;}
-   #newsDetailsWrapper .newsDetailsWrap .newsDetailsBanners { height:130px;}
-   #newsDetailsWrapper .newsDetailsWrap .newsDetailsBanners img{ object-fit: cover; width:auto;}
-   #newsDetailsWrapper .newsDetailsWrap .newsDetailsBoxs .newsDetailsTopBoxs .shareBoxs button { background-size: 23px;}
+#newsDetailsWrapper .newsDetailsWrap{ padding:64px 15px 170px;}
+#newsDetailsWrapper .newsDetailsWrap .newsDetailsBanners { height:130px;}
+#newsDetailsWrapper .newsDetailsWrap .newsDetailsBanners .newsDetailBannerTitles{padding:20px;}
+#newsDetailsWrapper .newsDetailsWrap .newsDetailsBanners .newsDetailBannerTitles h3{
+   font-size: 22px;
+   line-height: 26.25px;
+   padding-bottom: 4px;
+}
+
+#newsDetailsWrapper .newsDetailsWrap .newsDetailsBanners .newsDetailBannerTitles p{font-size: 13px;}
+#newsDetailsWrapper .newsDetailsWrap .newsDetailsBoxs .newsDetailsTopBoxs .shareBoxs button { background-size: 23px;}
+
 }
 
 @media all and (max-width:768px){
 
-   #newsDetailsWrapper .newsDetailsWrap .backSite{ 
-      font-size: 14px; 
-      line-height:16.8px;
-      height: 20px;
-      width: 128px;
-      background-size: 20px;
-      background-position: -5px center;
-   }
+#newsDetailsWrapper .newsDetailsWrap .backSite{ 
+   font-size: 14px; 
+   line-height:16.8px;
+   height: 20px;
+   width: 128px;
+   background-size: 20px;
+   background-position: -5px center;
+}
 
-   
-   #newsDetailsWrapper .newsDetailsWrap .newsDetailsBanners .pcBanners{ display:none;}
-   #newsDetailsWrapper .newsDetailsWrap .newsDetailsBanners .moBanners{ 
-      display:block; 
-      width: 100%;
-      height:100%;
-      object-fit: fill;
+#newsDetailsWrapper .newsDetailsWrap .newsDetailsBanners{ background-image: url(/icube/assets/images/news/moNewsBanners.png);}
 
-   }
+#newsDetailsWrapper .newsDetailsWrap .newsDetailsBoxs { padding:20px;}
+#newsDetailsWrapper .newsDetailsWrap .newsDetailsBoxs .newsDetailsTopBoxs { 
+   flex-direction: column;
+   gap:26px;
+   padding-bottom:22px;
+}
 
-   #newsDetailsWrapper .newsDetailsWrap .newsDetailsBoxs { padding:20px;}
-   #newsDetailsWrapper .newsDetailsWrap .newsDetailsBoxs .newsDetailsTopBoxs { 
-      flex-direction: column;
-      gap:26px;
-      padding-bottom:22px;
-   }
+#newsDetailsWrapper .newsDetailsWrap .newsDetailsBoxs .newsDetailsContBoxs{ padding:30px 0px 50px;}
+#newsDetailsWrapper .newsDetailsWrap .newsDetailsBoxs .newsDetailsContBoxs .detailSpaces h3{ 
+   text-align: left;
+   font-size: 13px;
+   line-height: 15.6px;
+}
 
-   #newsDetailsWrapper .newsDetailsWrap .newsDetailsBoxs .newsDetailsContBoxs{ padding:30px 0px 50px;}
-   #newsDetailsWrapper .newsDetailsWrap .newsDetailsBoxs .newsDetailsContBoxs .detailSpaces h3{ 
-      text-align: left;
-      font-size: 13px;
-      line-height: 15.6px;
-   }
+#newsDetailsWrapper .newsDetailsWrap .newsDetailsBoxs .newsDetailsContBoxs .detailSpaces h1 {
 
-   #newsDetailsWrapper .newsDetailsWrap .newsDetailsBoxs .newsDetailsContBoxs .detailSpaces h1 {
+   text-align: left;
+   font-size: 18px;
+   line-height: 26px;
+}
 
-      text-align: left;
-      font-size: 18px;
-      line-height: 26px;
-   }
+#newsDetailsWrapper .newsDetailsWrap .newsDetailsBoxs .newsDetailsContBoxs .detailSpaces p {
 
-   #newsDetailsWrapper .newsDetailsWrap .newsDetailsBoxs .newsDetailsContBoxs .detailSpaces p {
+   font-size: 13px;
+   line-height: 15.6px;
+   text-align: left;
+   padding-bottom: 38px;
+}
 
-      font-size: 13px;
-      line-height: 15.6px;
-      text-align: left;
-      padding-bottom: 38px;
-   }
+#newsDetailsWrapper .newsDetailsWrap .newsDetailsBoxs .newsDetailsContBoxs .detailSpaces .detailArticleImg {
+   height:181px;
+}
+#newsDetailsWrapper .newsDetailsWrap .newsDetailsBoxs .newsDetailsContBoxs .detailSpaces .detailArticleImg img{
 
-   #newsDetailsWrapper .newsDetailsWrap .newsDetailsBoxs .newsDetailsContBoxs .detailSpaces .detailArticleImg {
-      height:181px;
-   }
-   #newsDetailsWrapper .newsDetailsWrap .newsDetailsBoxs .newsDetailsContBoxs .detailSpaces .detailArticleImg img{
+   object-fit: cover;
+}
+#newsDetailsWrapper .newsDetailsWrap .newsDetailsBoxs .newsDetailsContBoxs .detailSpaces .detailArticleText {
 
-      object-fit: cover;
-   }
-   #newsDetailsWrapper .newsDetailsWrap .newsDetailsBoxs .newsDetailsContBoxs .detailSpaces .detailArticleText {
+   padding:30px 0px 50px;
+}
+#newsDetailsWrapper .newsDetailsWrap .newsDetailsBoxs .newsDetailsContBoxs .detailSpaces .detailArticleText textarea {
 
-      padding:30px 0px 50px;
-   }
-   #newsDetailsWrapper .newsDetailsWrap .newsDetailsBoxs .newsDetailsContBoxs .detailSpaces .detailArticleText textarea {
-
-      font-size: 14px;
-      line-height: 22px;
-   }
+   font-size: 14px;
+   line-height: 22px;
+}
 
 
 }

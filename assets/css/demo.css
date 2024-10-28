@@ -66,3 +66,28 @@ color:#5B9DFF!important;
 .newsMoSwiper .swiper-button-next:after,  .newsMoSwiper .swiper-button-prev:after{
    font-size:13px;
 }
+
+
+/* 메인하단배너 스와이프 */
+
+.constructTabContSwiper .constructTabPagination{
+
+   width:auto;
+   height:20px;
+   border-radius: 20px;
+   right: 12px;
+   left:unset;
+   background-color: rgba(255, 255, 255, 0.2);
+   padding:3px 10px;
+   color:#fff;
+}
+
+
+@media all and (max-width:768px){
+
+.constructTabContSwiper .constructTabPagination { 
+   right:unset;
+   left:12px;
+}
+
+}

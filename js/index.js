@@ -3,7 +3,6 @@ import { icubeFooterEvet } from "./footer.js";
 import { icubePopupEvet } from "./popup/popup.js";
 
 
-
 /* 웹 메인화면 로그인 팝업 이벤트 */
 const loginPopupEvet = () => {
 

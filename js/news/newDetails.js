@@ -17,8 +17,6 @@ function newsDetailsTextAreaEvet(){
 newsDetailsTextAreaEvet();
 
 
-
-
 /* 목록으로 돌아가기 클릭시 이전페이지로 이동 */
 
 const BackSiteBtnEvet = () => {

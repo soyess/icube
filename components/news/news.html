@@ -17,8 +17,10 @@
         <div class="icubeHeader"></div>
         <div class="newsWrap">
            <section class="newsBanners">
-            <img src="/icube/assets/images/news/newsBanner.png" alt="banners" class="pcBanners">
-            <img src="/icube/assets/images/news/moNewsBanners.png" alt="banners" class="moBanners">
+            <div class="newsBannerTitles">
+               <h3>News</h3>
+               <p>최신 소식과 건설 뉴스를 확인해보세요</p>
+            </div>
           </section>
            <section class="newsBoxs">
                <div class="newsToday newsInfoBoxs">
@@ -50,7 +52,7 @@
                             </div>
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
-                            <div class="swiper-pagination"></div>
+                            <div class="newsMoSwiperPagination swiper-pagination"></div>
                         </div>
                 </div>
                </div>
@@ -124,9 +126,9 @@
     <script>
         let newsSwiper = new Swiper(".newsMoSwiper", {
         slidesPerView: 1,
-        spaceBetween: 30,
+        spaceBetween: 50,
         pagination: {
-            el: ".swiper-pagination",
+            el: ".newsMoSwiperPagination",
             type: "fraction",
         },
         navigation: {

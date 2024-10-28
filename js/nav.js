@@ -6,7 +6,6 @@ const mobileNavEvet = () => {
   let mobileHeader = document.querySelector("header")
   let mobileNavContent = document.querySelector("nav");
   let totalBody = document.getElementsByTagName('body')[0];
-  console.log(totalBody, '네비바디작동');
 
    if(mobileNavBtn){
 
@@ -24,6 +23,7 @@ const mobileNavEvet = () => {
        mobileHeader.classList.add("active");
        mobileNavContent.classList.add("active");
        totalBody.classList.add("hidden")
+       console.log(totalBody, '모바일메뉴클릭스크롤바디작동');
 
      })
    }
@@ -33,7 +33,7 @@ const mobileNavEvet = () => {
 mobileNavEvet();
 
 
-/* 모바일 네비에서 로그인 버튼 클릭시 불러올 팝업 */
+/* 웹,모바일 네비에서 로그인 버튼 클릭시 불러올 팝업 */
 const icubePopupNavEvet = () => {
    
   let icubePopUp = document.getElementById("popupWrappers");
@@ -75,11 +75,29 @@ const icubePopupNavEvet = () => {
   };
 
   xhr.send();
-  console.log('popup 작동');
+  console.log('popup작동');
 
  }
 
 }
+
+/* 웹 헤더 출근하기 버튼 클릭시, 팝업 오픈 */
+
+const headerPopOpenEvet = () => {
+
+  const webNavLoginBtn = document.querySelector(".webNavLoginBtn");
+  const popContents = document.getElementById('popupWrappers');
+
+  webNavLoginBtn.addEventListener("click" , () => {
+      
+    console.log('웹네비로그인클릭');
+    icubePopupNavEvet();
+    popContents.classList.add("active");
+  })
+}
+
+
+headerPopOpenEvet();
 
 /* 모바일 네비에서 로그인 버튼 클릭시 로그인 팝업 오픈 */
 
@@ -91,7 +109,6 @@ const moNavPopOpenEvet = () => {
    let mobileheader = document.querySelector("header")
    let mobileNav = document.querySelector("nav");
    let totalBody = document.getElementsByTagName('body')[0];
-   console.log(totalBody, '네비팝업body작동');
 
 
    moNavLoginBtn.addEventListener("click", () => {
@@ -104,6 +121,7 @@ const moNavPopOpenEvet = () => {
     mobileheader .classList.remove("active");
     mobileNav.classList.remove("active");
     totalBody.classList.add("hidden");
+    console.log(totalBody, '모바일메뉴팝업스크롤body작동');
 
 
    })

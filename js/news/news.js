@@ -270,10 +270,9 @@ const pastNewsData = async () => {
 
                 for(let i = 0; i <= thisSelectBoxs.children.length - 1; i++){
                     
-                    const answerBoxs = thisTarget.textContent.substr(-1, 1);
-                    console.log(thisTarget.textContent)
+                    const answerBoxs = thisTarget.textContent.substr(0, [thisTarget.textContent.length - 1]); //년, 월을 제거한 텍스트값
 
-                    if(thisSelectBoxs.children[i].value == thisTarget.textContent.substr(0, [thisTarget.textContent.length - 1])){ //클릭한 리스트의 값과 옵션의 값이 같다면
+                    if(thisSelectBoxs.children[i].value == answerBoxs){ //클릭한 리스트의 값과 옵션의 값이 같다면
                         thisSelectBoxs.children[i].selected = "true"; //셀렉박스에 값 담기
                         console.log(`현재셀렉박스값 ${thisSelectBoxs.id}, 셀렉박스값 ${thisSelectBoxs.value}`);
                     }

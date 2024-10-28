@@ -6,6 +6,10 @@
    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
    <link rel="stylesheet" href="/icube/assets/css/index.css">
    <link rel="stylesheet" href="/icube/assets/css/common.css">
+   <link rel="stylesheet" href="/icube/assets/css/demo.css">
+   <!-- Link Swiper's CSS -->
+   <link rel="stylesheet" href="/icube/assets/css/swiper.css">
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
    <title>ICUBE</title>
 </head>
 <body>
@@ -14,11 +18,25 @@
       <main class="icubeMainCont">
          <section class="mainMenuWrappers">
              <div class="loginBoxs mainWebLogin">
+               <!--로그인전-->
+               <div class="beforeLoginBoxs">
                <h3>로그인</h3>
                <div class="imgBoxs">
-                  <img src="/icube/assets/images/loginImg.png" alt="login">
+                  <img src="/icube/assets/images/loginImg.png" alt="beforeLogin">
                </div>
                <button class="loginBtns">출근하기</button>
+             </div>
+            <!--로그인후-->
+             <div class="successLoginBoxs">
+               <h3>내 정보</h3>
+               <div class="imgBoxs">
+                  <img src="/icube/assets/images/main/successLogin.png" alt="successLogin">
+                  <h5>안녕하세요</h5>
+                  <p><span>홍길동</span> 님</p>
+               </div>
+               <a href="">마이페이지</a>
+               <button>로그아웃</button>
+             </div>
              </div>
              <div class="loginBoxs mainMobileLogin">
                <h2>건설의 모든 것이<br class="moBr">모이는 나만의<br class="moBr">업무 공간, iCube</h2>
@@ -85,7 +103,7 @@
                      <h3>날씨 정보</h3>
                   </ul>
                   <ul class="weatherConts">
-                    <li class="iconBoxs"><img src="/icube/assets/images/weatherIcon.png" alt="icon"></li>
+                    <li class="iconBoxs"><img src="/icube/assets/images/weather/weatherIcon02.png" alt="icon"></li>
                     <li>
                       <h2>부분적으로 흐림</h2>
                       <p>용산구</p>
@@ -93,15 +111,31 @@
                   </ul>
                   <ul class="weatherConts weatherInfoBoxs">
                      <li>
-                        <img src="/icube/assets/images/weatherSubIcon.png" alt="icon" class="pcweatherIcon">
+                        <img src="/icube/assets/images/weather/weatherSubIcon.png" alt="icon" class="pcweatherIcon">
                         <span>성동구</span>
                      </li>
                      <li><p>맑음</p></li>
                   </ul>
                  </div>
                  <div class="constructTabCont constructTabCont03">
-                   <img src="/icube/assets/images/banner.png" alt="banner" class="pcBanners">
-                   <img src="/icube/assets/images/moMainBanners.png" alt="banner" class="moBanners">
+                    <!-- Swiper -->
+                     <div class="swiper constructTabContSwiper">
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                           <img src="/icube/assets/images/main/banner.png" alt="banner" class="pcBanners">
+                           <img src="/icube/assets/images/main/moMainBanners.png" alt="banner" class="moBanners">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="/icube/assets/images/main/banner.png" alt="banner" class="pcBanners">
+                           <img src="/icube/assets/images/main/moMainBanners.png" alt="banner" class="moBanners">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="/icube/assets/images/main/banner.png" alt="banner" class="pcBanners">
+                           <img src="/icube/assets/images/main/moMainBanners.png" alt="banner" class="moBanners">
+                        </div>
+                        </div>
+                        <div class="constructTabPagination swiper-pagination"></div>
+                     </div>
                  </div>
                </div>
 
@@ -112,5 +146,18 @@
    </div>
    <div id="popupWrappers"></div>
    <script type="module" src="/icube/js/index.js"></script>
+      <!-- Initialize Swiper -->
+   <script>
+      let constructTabSwiper = new Swiper(".constructTabContSwiper", {
+      // autoplay: {
+      //   delay: 2500,
+      //   disableOnInteraction: false,
+      // },
+      pagination: {
+         el: ".constructTabPagination",
+         type: "fraction",
+      }
+      });
+   </script>
 </body>
 </html>
