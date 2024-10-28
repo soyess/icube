@@ -104,7 +104,6 @@ window.addEventListener("resize" , () => {
 
    if(window.innerWidth <= 1080){
 
-      mobileNavEvet();
       moNavPopOpenEvet();
    }
 
