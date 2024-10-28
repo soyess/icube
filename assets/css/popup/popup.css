@@ -269,10 +269,34 @@ input:focus{ outline: none;}
     background:linear-gradient( #426EA44D 0 30%,#1F2C434D 50% 30%);
     box-shadow: 0px 0px 20px 0px #00000040;
 }
+
 .popupWrap .loginPages .loginSection { 
+    
     width: calc(100% - 30px);
-    padding:86px 15px 100px;
+    padding:86px 15px 0px;
+    overflow-y: scroll;
 }
+
+/* 스크롤바 */
+
+.popupWrap .loginPages .loginSection::-webkit-scrollbar {
+    width:2px;
+}
+
+.popupWrap .loginPages .loginSection::-webkit-scrollbar-button:vertical:start:increment {
+    display: block;
+    height: 5px;
+}
+
+/* 만일 스크롤바 트랙 아래쪽도 여백 공간 */
+.popupWrap .loginPages .loginSection::-webkit-scrollbar-button:vertical:end:decrement {
+    display: block;
+    width: 5px;
+}
+
+
+/**/
+
 
 .popupWrap .loginPages .loginSection ul {
 
