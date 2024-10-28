@@ -215,6 +215,7 @@ button{
 
    content: "";
    background: linear-gradient(90deg, rgba(38,38,38,0) 0%, rgba(38,38,38,1) 100%);
+   -webkit-background : linear-gradient(90deg, rgba(38,38,38,0) 0%, rgba(38,38,38,1) 100%);
    position: absolute;
    bottom:0px;
    right:-1px;

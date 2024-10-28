@@ -280,12 +280,21 @@ input:focus{ outline: none;}
     justify-content: flex-start;
 }
 
+.popupWrap .loginPages .loginSection ul .loginIconBoxs { display:none; }
 .popupWrap .loginPages .loginSection ul li h1 {
 
     align-items: flex-start;
     justify-content: flex-start;
+    padding-top: 0px;
+    font-size: 44px;
+    line-height: 52.8px;
 }
+.popupWrap .loginPages .loginSection ul li p {
 
+    font-size: 14px;
+    line-height: 16.8px;
+    opacity: 80%;
+}
 .popupWrap .loginPages .loginSection .loginFormBoxs { padding-top:60px;}
 .popupWrap .loginPages .loginSection .loginFormBoxs button { 
     font-size: 15px; 
