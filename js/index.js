@@ -46,6 +46,42 @@ const mobileLoginPopupEvet = () => {
 
 }
 
+/* 모바일 네비 버튼 클릭시, 메뉴오픈 */
+
+const mobileNavEvet = () => {
+
+  let mobileNavBtn = document.querySelector(".mobileNavBtn");
+  let mobileHeader = document.querySelector("header")
+  let mobileNavContent = document.querySelector("nav");
+  let totalBody = document.getElementsByTagName('body')[0];
+
+   if(mobileNavBtn){
+
+     totalBody.classList.remove("hidden"); //body 초기값
+     mobileNavBtn.classList.remove("active"); //nav버튼 초기값
+     mobileHeader.classList.remove("active"); //header 초기값
+     mobileNavContent.classList.remove("active"); //nav 컨텐츠 초기값
+
+     mobileNavBtn.addEventListener("click" , () => {
+
+       if(mobileNavBtn.classList.contains("active")){
+
+         return mobileNavBtn.classList.remove("active"),
+         mobileHeader.classList.remove("active"),
+         mobileNavContent.classList.remove("active"),
+         totalBody.classList.remove("hidden");
+       }
+
+       mobileNavBtn.classList.add("active");
+       mobileHeader.classList.add("active");
+       mobileNavContent.classList.add("active");
+       totalBody.classList.add("hidden")
+       console.log(totalBody, '모바일메뉴클릭스크롤바디작동');
+
+     })
+   }
+
+}
 
 window.addEventListener("load" , () => {
     
@@ -53,7 +89,12 @@ window.addEventListener("load" , () => {
    icubeFooterEvet(); //footer연결
 
   if(window.innerWidth > 1080){ loginPopupEvet();}
-  if(window.innerWidth <= 1080){ mobileLoginPopupEvet();}
+  if(window.innerWidth <= 1080){ 
+
+    mobileLoginPopupEvet();
+    mobileNavEvet();
+  
+  }
 
 
    /* 웹 메인화면 건설정보에서 링크클릭 이벤트 */
@@ -123,7 +164,9 @@ window.addEventListener("load" , () => {
     }
 
     if(window.innerWidth <= 1080){
+      
       mobileLoginPopupEvet();
+      mobileNavEvet();
     }
     
 })
