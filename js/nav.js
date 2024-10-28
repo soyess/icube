@@ -9,6 +9,11 @@ function mobileNavEvet(){
 
    if(mobileNavBtn){
 
+     totalBody.classList.remove("hidden"); //body 초기값
+     mobileNavBtn.classList.remove("active"); //nav버튼 초기값
+     mobileHeader.classList.remove("active"); //header 초기값
+     mobileNavContent.classList.remove("active"); //nav 컨텐츠 초기값
+
      mobileNavBtn.addEventListener("click" , () => {
 
        if(mobileNavBtn.classList.contains("active")){
