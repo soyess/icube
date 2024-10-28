@@ -97,18 +97,21 @@ textarea:focus{ outline: none;}
    line-height: 19.2px;
    letter-spacing: 0.2px;
    color:#fff;
-   background-image: url(/icube/assets/images/news/arrowBefore.png);
-   background-position: 0px center;
-   background-repeat: no-repeat;
-   background-size: 26px;
    height: 26px;
    width: 150px;
    text-align: right;
    display: flex;
    align-items: center;
-   justify-content: flex-end;
    cursor: pointer;
 
+}
+
+#newsDetailsWrapper .newsDetailsWrap .backSite img{
+
+   height:26px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 #newsDetailsWrapper .newsDetailsWrap .newsDetailsBoxs .newsDetailsTopBoxs .shareBoxs{
@@ -300,9 +303,9 @@ textarea:focus{ outline: none;}
    line-height:16.8px;
    height: 20px;
    width: 128px;
-   background-size: 20px;
-   background-position: -5px center;
 }
+
+#newsDetailsWrapper .newsDetailsWrap .backSite img { height:20px;}
 
 #newsDetailsWrapper .newsDetailsWrap .newsDetailsBanners{ background-image: url(/icube/assets/images/news/moNewsBanners.png);}
 

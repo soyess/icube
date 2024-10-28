@@ -28,8 +28,7 @@ const mobileLoginPopupEvet = () => {
       
   const loginMobileBtns = document.querySelector(".moGoLogin");
   const loginWrppers = document.getElementById('popupWrappers');
-  const mainBody = document.getElementsByTagName('body')[0];
-  console.log(mainBody , '모바일메인팝업바디작동')
+  const mainBody = document.querySelector(".mobileHidden");
 
   if(loginMobileBtns){
     
@@ -39,6 +38,7 @@ const mobileLoginPopupEvet = () => {
          console.log('모바일화면로그인클릭');
          loginWrppers.classList.add("active");
          mainBody.classList.add("hidden");
+         console.log(mainBody , '모바일메인팝업클릭시mobileHidden작동')
   
         });
 

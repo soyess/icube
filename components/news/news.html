@@ -13,8 +13,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
-    <div id="newsWrappers">
-        <div class="icubeHeader"></div>
+  <div class="icubeHeader"></div>
+    <div id="newsWrappers" class="mobileHidden">
         <div class="newsWrap">
            <section class="newsBanners">
             <div class="newsBannerTitles">
@@ -136,6 +136,8 @@
         prevEl: ".swiper-button-prev",
       },
         });
+      
+      window.addEventListener("resize" ,  newsSwiper);
     </script>
 </body>
 </html>

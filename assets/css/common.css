@@ -18,9 +18,11 @@ button{
 }
 
 
-body.hidden{
+.mobileHidden.hidden{
 
+   height:600px;
    overflow: hidden;
+   pointer-events:none;
 }
 
 .icubeHeader { 
@@ -35,6 +37,7 @@ body.hidden{
 header { 
 
    position:absolute;
+   z-index:99999;
    background-color: transparent;
    width: 100%;
    height:100px;
@@ -70,7 +73,7 @@ header .pcHeaders .logoBoxs a{
 }
 header .pcHeaders .logoBoxs a img{
 
-   height:28px;
+   height:24px;
    object-fit: contain;
 
 }
@@ -82,6 +85,7 @@ header .pcHeaders .logoBoxs p {
    font-weight: 400;
    letter-spacing: 0.2px;
    padding:0px 0px 0px 16px;
+   opacity: 90%;
 }
 
 
@@ -333,10 +337,6 @@ footer {
 
 header { 
    position: fixed; 
-   left:0; 
-   top:0;
-   right:0;
-   z-index:999999;
    background-color: #141414;
    height:64px;
 }

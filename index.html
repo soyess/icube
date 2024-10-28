@@ -13,8 +13,8 @@
    <title>ICUBE</title>
 </head>
 <body>
-   <div id="icubeMainWrappers">
-      <div class="icubeHeader"></div>
+   <div class="icubeHeader"></div>
+   <div id="icubeMainWrappers" class="mobileHidden">
       <main class="icubeMainCont">
          <section class="mainMenuWrappers">
              <div class="loginBoxs mainWebLogin">
@@ -149,10 +149,6 @@
       <!-- Initialize Swiper -->
    <script>
       let constructTabSwiper = new Swiper(".constructTabContSwiper", {
-      // autoplay: {
-      //   delay: 2500,
-      //   disableOnInteraction: false,
-      // },
       pagination: {
          el: ".constructTabPagination",
          type: "fraction",

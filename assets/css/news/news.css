@@ -128,6 +128,7 @@ button{ border: none;}
     padding-right: 20px;
     border-right: 1px solid #2E2E2E;
     margin-top:20px;
+    position: relative;
     
 }
 
@@ -157,10 +158,13 @@ button{ border: none;}
 }
 
 .newsWrap .newsBoxs .newsToday .todaysMain .imgboxs{
-    width: 100%;
+    width: calc(100% - 20px);
     max-height:290px;
     overflow: hidden;
     border-radius: 10px;
+    position: absolute;
+    left:0px;
+    bottom:0px;
 }
 .newsWrap .newsBoxs .newsToday .todaysMain .imgboxs img{
 

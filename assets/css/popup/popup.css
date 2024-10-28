@@ -253,7 +253,7 @@ input:focus{ outline: none;}
     width:100%;
     height:100%;
     border-radius: 20px;
-    animation: opacityEvet 500ms ease-in-out forwards;
+    animation: opacityEvet 400ms ease-in-out forwards;
 }
 
 @keyframes opacityEvet{

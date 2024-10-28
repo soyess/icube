@@ -160,13 +160,12 @@ button{ border: none;}
    line-height: 16.71px;
    letter-spacing: 0.2px;
    color: #FFFFFF;
-   opacity: 50%;
    padding:12px 0px 4px;
 }
 
 #icubeMainWrappers .icubeMainCont .mainMenuWrappers .loginBoxs .successLoginBoxs p{
 
-   color:#D9D9D9;
+   color:#fff;
    font-size: 20px;
    font-weight: 600;
    line-height: 23.87px;
@@ -562,6 +561,8 @@ button{ border: none;}
 
 @media all and (max-width:1080px){
 
+html, body { background-color:#141414!important; }
+
 #icubeMainWrappers .icubeMainCont{
       align-items: unset;
       height:100%;
@@ -622,7 +623,7 @@ button{ border: none;}
    align-items: center;
 }
 #icubeMainWrappers .icubeMainCont .mainMenuWrappers .mainMenuBoxs .menusCont .titles { padding-bottom:37px;}
-#icubeMainWrappers .icubeMainCont .mainMenuWrappers .mainMenuBoxs .constructTab .titles { padding-bottom: 30px;}
+#icubeMainWrappers .icubeMainCont .mainMenuWrappers .mainMenuBoxs .constructTab .titles { padding-bottom: 10px;}
 #icubeMainWrappers .icubeMainCont .mainMenuWrappers .mainMenuBoxs .menusCont .titles h3 { 
    font-size: 16px;
    line-height: 19.2px;
@@ -657,11 +658,14 @@ button{ border: none;}
 #icubeMainWrappers .icubeMainCont .mainMenuWrappers .mainMenuBoxs .constructTab .constructTabCont02 {
 
    width:calc(50% - 22px);
-   height:auto;
+   height:calc(254px - 36px);
    max-height:254px;
    margin-right:11px;
    margin-top:10px;
    padding:26px 10px 10px 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
    
 }
 
@@ -698,6 +702,7 @@ button{ border: none;}
    max-width: calc(20% - 15px);
    flex:1;
    font-size: 15px;
+   padding: 20px 0px 23px 0px;
 
 }
 

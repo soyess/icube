@@ -5,7 +5,7 @@ const mobileNavEvet = () => {
   let mobileNavBtn = document.querySelector(".mobileNavBtn");
   let mobileHeader = document.querySelector("header")
   let mobileNavContent = document.querySelector("nav");
-  let totalBody = document.getElementsByTagName('body')[0];
+  let totalBody = document.querySelector(".mobileHidden");
 
    if(mobileNavBtn){
 
@@ -28,7 +28,7 @@ const mobileNavEvet = () => {
        mobileHeader.classList.add("active");
        mobileNavContent.classList.add("active");
        totalBody.classList.add("hidden")
-       console.log(totalBody, '모바일메뉴클릭스크롤바디작동');
+       console.log(totalBody, '모바일메뉴클릭시mobileHidden작동');
 
      })
    }
@@ -112,7 +112,7 @@ const moNavPopOpenEvet = () => {
    let mobileNavButton = document.querySelector(".mobileNavBtn");
    let mobileheader = document.querySelector("header")
    let mobileNav = document.querySelector("nav");
-   let totalBody = document.getElementsByTagName('body')[0];
+   let totalBody = document.querySelector(".mobileHidden");
 
 
    moNavLoginBtn.addEventListener("click", () => {
@@ -125,7 +125,7 @@ const moNavPopOpenEvet = () => {
     mobileheader .classList.remove("active");
     mobileNav.classList.remove("active");
     totalBody.classList.add("hidden");
-    console.log(totalBody, '모바일메뉴팝업스크롤body작동');
+    console.log(totalBody, '모바일메뉴팝업클릭시mobileHidden작동');
 
 
    })
