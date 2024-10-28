@@ -127,6 +127,7 @@ header .pcHeaders .loginCheckBoxs .addLiginInfo{
 header .pcHeaders .loginCheckBoxs .addLiginInfo .beforLogin { 
    opacity: 60%;
    height:100%;
+   display: block;
 }
 header .pcHeaders .loginCheckBoxs .addLiginInfo .beforLogin button{
 
