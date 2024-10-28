@@ -20,7 +20,7 @@ button{
 
 .mobileHidden.hidden{
 
-   height:500px;
+   height:300px;
    overflow: hidden;
    pointer-events:none;
 }
@@ -358,7 +358,7 @@ header .pcHeaders{
 }
 
 header .pcHeaders .logoBoxs{ padding-left:0px; }
-header .pcHeaders .logoBoxs a img { height:12.5px;}
+header .pcHeaders .logoBoxs a img { height:17px;}
 header .pcHeaders .pcHeaderTitles {display:none;}
 header .pcHeaders .loginCheckBoxs { display:none;}
 header .pcHeaders .mobileNavBtn{ 
