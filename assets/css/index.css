@@ -703,7 +703,19 @@ html, body { background-color:#141414!important; }
    flex:1;
    font-size: 15px;
    padding: 20px 0px 23px 0px;
+   opacity: 100%;
 
+}
+
+#icubeMainWrappers .icubeMainCont .mainMenuWrappers .mainMenuBoxs .constructTab .constructTabCont .constructTabLinks a:hover{
+
+   transition: none;
+}
+
+#icubeMainWrappers .icubeMainCont .mainMenuWrappers .mainMenuBoxs .constructTab .constructTabCont .constructTabLinks a:hover::before{
+
+   width: 0px;
+   transition:none;
 }
 
 #icubeMainWrappers .icubeMainCont .mainMenuWrappers .mainMenuBoxs .constructTab .constructTabCont02 .weatherInfoBoxs{
